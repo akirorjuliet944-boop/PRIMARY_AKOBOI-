@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Akoboi Primary School</title>
+</head>
+<link rel="stylesheet" href="style.css">
+
+<body style="font-family: Times New Roman; margin: 5px; padding: 15px;">
+
+    <!-- Header -->
+    <div style="background-color: green; color: white; padding: 20px;text-align:center; size:24;">
+        <h1><strong>AKOBOI PRIMARY SCHOOL</strong></h1>
+        <p>Education for a Brighter Future</p><br>
+<marquee>
+<p>We Lead Others Follow</p>
+</marquee>
+    </div>
+
+      <!-- Navigation -->
+    <div style="background-color: pink; padding: 10px; Text-align:center;" class="nav">
+        <a href="Home.html">Home</a> |
+        <a href="About Us.html">About Us</a> |
+        <a href="Gallery.html">Gallery</a> |
+        <a href="Staff Profile.html">Staff Profile</a> |
+        <a href="Contact.html">Contact</a>|
+	<a href="Frequently Asked Questions.html">Frequently Asked Questions</a>
+    </div>
+    <head>
+        <h1>Frequently Asked Questions</h1>
+    </head>
+  <h2>FAQs</h2>
+ 
+    <div class="faq-container">
+        <div class="faq-item" id="faq1">
+            <div class="faq-question">
+                <span>What is the school fee structure?</span>
+            </div>
+            <div class="faq-answer">
+                <p>Our fees are competitive and inclusive of tuition, meals, and most learning materials. Detailed fee structure is available at the school office or upon request via email.</p>
+            </div>
+        </div>
+
+        <div class="faq-item" id="faq2">
+            <div class="faq-question">
+                <span>When is the admission period?</span>
+            </div>
+            <div class="faq-answer">
+                <p>Admissions run throughout the year, but the main intake is in January and May. Early application is highly encouraged.</p>
+            </div>
+        </div>
+
+        <div class="faq-item" id="faq3">
+            <div class="faq-question">
+                <span>Does the school offer boarding facilities?</span>
+            </div>
+            <div class="faq-answer">
+                <p>Yes, we offer both day and boarding options with high standard hostel facilities for boys and girls.</p>
+            </div>
+        </div>
+
+        <div class="faq-item" id="faq4">
+            <div class="faq-question">
+                <span>What subjects do you offer at O'Level and A'Level?</span>
+            </div>
+            <div class="faq-answer">
+                <p>We offer a full range of subjects including Sciences, Arts, and Vocational subjects as per the Uganda National Curriculum.</p>
+            </div>
+        </div>
+
+        <div class="faq-item" id="faq5">
+            <div class="faq-question">
+                <span>Are there scholarship opportunities?</span>
+            </div>
+            <div class="faq-answer">
+                <p>Yes, we offer merit-based and need-based scholarships to outstanding and deserving students every year.</p>
+            </div>
+        </div>
+
+        <div class="faq-item" id="faq6">
+            <div class="faq-question">
+                <span>What co-curricular activities are available?</span>
+            </div>
+            <div class="faq-answer">
+                <p>We have Football, Netball, Music, Dance, Debate, Scouting, and many more clubs and sports.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+
+    <script>
+        // FAQ Accordion Functionality
+        document.querySelectorAll('.faq-item').forEach(item => {
+            item.addEventListener('click', () => {
+                // Close all other items
+                document.querySelectorAll('.faq-item').forEach(otherItem => {
+                    if (otherItem !== item) {
+                        otherItem.classList.remove('active');
+                    }
+                });
+                // Toggle current item
+                item.classList.toggle('active');
+            });
+        });
+    </script>
+
+
+ 
+    <footer>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+         <!-- Footer -->
+    <div style="background-color: green; color: white; text-align: center; padding: 15px;">
+        <p>&copy; Developers@Akoboi Primary School.</p>
+    </div>
+</body>
+</html>
+
